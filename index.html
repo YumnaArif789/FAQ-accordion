@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Poppins&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+        width: 100%;
+        height: 100vh;
+        font-family: 'Kumbh Sans', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        background-color: white;
+        border-radius: 20px;
+        height: 500px;
+        width: 990px;
+        display: flex;
+        gap: 0px;
+
+    }
+
+    .box1 {
+        position: relative;
+        background-image: url(bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: -567px -290px;
+
+    }
+
+    .images {
+        overflow: hidden;
+    }
+
+    .desk {
+        margin-left: -60px;
+        margin-top: 60px;
+    }
+
+    .mob {
+        display: none;
+    }
+
+    .boximg {
+        position: absolute;
+        top: 195px;
+        left: -90px;
+    }
+
+    .box2 {
+        font-family: 'Kumbh Sans', sans-serif;
+        padding: 50px 100px;
+    }
+
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    .Questions {
+        width: 23rem;
+        /* background-color: yellow; */
+    }
+
+    .Ques {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: gray;
+        cursor: pointer;
+    }
+
+    .Ques p {
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .icon {
+        height: 10px;
+        width: 15px;
+        margin-top: 10px;
+    }
+
+    .ans {
+        font-size: 15px;
+        color: gray;
+        margin-bottom: 10px;
+    }
+.mobShadow{
+    display: none;
+}
+    @media(max-width:768px) {
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 150px;
+            width: 440px;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .box1 {
+            background-image: url(bg-pattern-mobile.svg);
+            background-repeat: no-repeat;
+            background-position: 100px -100px;
+        }
+
+        .desk {
+            display: none;
+        }
+
+        .boximg {
+            display: none;
+        }
+
+        .images {
+            overflow: visible;
+        }
+
+        .mob {
+            display: block;
+            margin-top: -250px;
+            margin-left: 80px;
+            width: 250px;
+            height: 250px;
+        }
+        .box2{
+            /* margin-top: -30px; */
+            padding: 60px 30px;
+        }
+.mobShadow{
+    display: block;
+    /* height: 400px; */
+    /* width: 400px; */
+    margin-left: 85px;
+}
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <div class="box1">
+
+            <div class="images">
+                <img class="mobShadow" src="bg-pattern-mobile.svg" alt="">
+                <img class="desk" src="illustration-woman-online-desktop.svg" alt="">
+                <img class="mob" src="illustration-woman-online-mobile.svg" alt="">
+            </div>
+            <img class="boximg" src="illustration-box-desktop.svg" alt="">
+        </div>
+
+
+        <div class="box2">
+            <h1>FAQ</h1>
+
+            <div class="Questions">
+
+                <div class="Ques Ques1">
+                    <p>How many team members can I invite?</p>
+
+                    <img class="icon icon1" src="icon-arrow-down.svg" alt="">
+                </div>
+                <div>
+                    <p class="ans ans1"></p>
+                </div>
+                <hr>
+                
+                <div class="Ques Ques2">
+                    <p>What is the maximum file upload size?</p>
+                    <img class="icon icon2" src="icon-arrow-down.svg" alt="">
+                </div>
+                <div>
+                    <p class="ans ans2"></p>
+                </div>
+                <hr>
+
+                <div class="Ques Ques3">
+                    <p>How do I reset my password?</p>
+                    <img class="icon icon3" src="icon-arrow-down.svg" alt="">
+                </div>
+                <div>
+                    <p class="ans ans3"></p>
+                </div>
+                <hr>
+
+                <div class="Ques Ques4">
+                    <p>Can I cancel my subscription?</p>
+                    <img class="icon icon4" src="icon-arrow-down.svg" alt="">
+                </div>
+                <div>
+                    <p class="ans ans4"></p>
+                </div>
+                <hr>
+
+                <div class="Ques Ques5">
+                    <p>Do you provide additional support?</p>
+                    <img class="icon icon5" src="icon-arrow-down.svg" alt="">
+                </div>
+                <div>
+                    <p class="ans ans5"></p>
+                </div>
+                <hr>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
